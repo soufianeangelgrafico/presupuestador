@@ -1,0 +1,34 @@
+[14-May-2020 07:17:36 UTC] PHP Warning:  include(../conexion.php): failed to open stream: No such file or directory in /home/angelgra/public_html/rehubic/ajax/envio_contacto.php on line 8
+[14-May-2020 07:17:36 UTC] PHP Warning:  include(): Failed opening '../conexion.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/angelgra/public_html/rehubic/ajax/envio_contacto.php on line 8
+[14-May-2020 07:17:36 UTC] PHP Notice:  Undefined variable: mysqli in /home/angelgra/public_html/rehubic/ajax/envio_contacto.php on line 17
+[14-May-2020 07:17:36 UTC] PHP Fatal error:  Uncaught Error: Call to a member function real_escape_string() on null in /home/angelgra/public_html/rehubic/ajax/envio_contacto.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/angelgra/public_html/rehubic/ajax/envio_contacto.php on line 17
+[21-May-2020 07:30:02 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/ajax/action.ajax.php on line 2
+[21-May-2020 07:30:03 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/ajax/action.ajax.php on line 4
+[21-May-2020 07:31:57 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/ajax/action.ajax.php on line 2
+[21-May-2020 07:31:57 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/ajax/action.ajax.php on line 4
+[21-May-2020 07:37:46 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/ajax/action.ajax.php on line 2
+[21-May-2020 07:37:46 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/ajax/action.ajax.php on line 4
+[21-May-2020 07:48:18 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/ajax/action.ajax.php on line 2
+[21-May-2020 07:48:18 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/ajax/action.ajax.php on line 4
+[21-May-2020 07:49:05 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/ajax/action.ajax.php on line 2
+[21-May-2020 07:49:06 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/ajax/action.ajax.php on line 4
+[21-May-2020 11:45:34 UTC] PHP Notice:  Undefined index: poblacion in /home/angelgra/public_html/rehubic/ajax/presupuestador_enviar_presupuesto.php on line 16
+[21-May-2020 11:45:34 UTC] PHP Notice:  Undefined index: provincia in /home/angelgra/public_html/rehubic/ajax/presupuestador_enviar_presupuesto.php on line 17
+[26-May-2020 07:51:49 UTC] PHP Notice:  Undefined variable: mysqli in /home/angelgra/public_html/rehubic/ajax/presupuestador_enviar_presupuesto.php on line 86
+[26-May-2020 07:51:49 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/angelgra/public_html/rehubic/ajax/presupuestador_enviar_presupuesto.php:86
+Stack trace:
+#0 {main}
+  thrown in /home/angelgra/public_html/rehubic/ajax/presupuestador_enviar_presupuesto.php on line 86
+[26-May-2020 12:19:23 UTC] PHP Notice:  Undefined index: email in /home/angelgra/public_html/rehubic/ajax/obtener_datos_presupuesto.php on line 3
+[26-May-2020 12:19:23 UTC] PHP Notice:  Undefined index: id_presupuesto in /home/angelgra/public_html/rehubic/ajax/obtener_datos_presupuesto.php on line 4
+[26-May-2020 12:20:30 UTC] PHP Notice:  Undefined index: email in /home/angelgra/public_html/rehubic/ajax/obtener_datos_presupuesto.php on line 3
+[26-May-2020 12:20:30 UTC] PHP Notice:  Undefined index: id_presupuesto in /home/angelgra/public_html/rehubic/ajax/obtener_datos_presupuesto.php on line 4
+[26-May-2020 12:21:08 UTC] PHP Notice:  Undefined index: email in /home/angelgra/public_html/rehubic/ajax/obtener_datos_presupuesto.php on line 3
+[26-May-2020 12:21:08 UTC] PHP Notice:  Undefined index: id_presupuesto in /home/angelgra/public_html/rehubic/ajax/obtener_datos_presupuesto.php on line 4
+[26-May-2020 12:21:37 UTC] PHP Notice:  Undefined index: email in /home/angelgra/public_html/rehubic/ajax/obtener_datos_presupuesto.php on line 3
+[26-May-2020 12:21:37 UTC] PHP Notice:  Undefined index: id_presupuesto in /home/angelgra/public_html/rehubic/ajax/obtener_datos_presupuesto.php on line 4
+[26-May-2020 12:22:32 UTC] PHP Notice:  Undefined index: email in /home/angelgra/public_html/rehubic/ajax/obtener_datos_presupuesto.php on line 3
+[26-May-2020 12:22:32 UTC] PHP Notice:  Undefined index: id_presupuesto in /home/angelgra/public_html/rehubic/ajax/obtener_datos_presupuesto.php on line 4
