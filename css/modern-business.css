@@ -1,0 +1,477 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+.textRight {text-align:right;}
+span.estados > span {
+    margin-left: 20px;
+	cursor:pointer;
+}
+span.fecha_modificado {
+    font-size: 12px;
+    font-weight: 300;
+    margin-left:8px;
+}
+.selected {font-weight:bold;}
+.codigo_presupuesto {
+    width: 400px;
+    max-width: 100%;
+    margin: 0px auto;
+    background: #F0F0F0;
+    padding: 15px;
+	display:inline-block;
+}
+input.transparent.form.form-control {
+    background: transparent;
+    margin-top: 10px;
+}
+.font18 {font-size:18px;}
+.deshabilitado {
+    filter: opacity(75%);
+}
+form[name="medidas"] * input[type="text"],form[name="medidas"] * input[type="number"], form[name="medidas"] * textarea {
+    margin: 5px;
+	border:0px;
+	margin: 5px;
+    background: #F0F0F0;
+    border: 0px;
+    padding: 20px;
+    font-size: 13px;
+}
+a.a-presupuestador {
+    color: white;
+}
+.bordenegro {
+	border: 10px solid black;
+    border-left: 0px;
+}
+ul.cuadrados_planificador * .texto-li {
+    color: white;
+    line-height: 26px;
+    font-weight: 500;
+    font-size: 20px;
+}
+#popupfoto {
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    position: fixed;
+    z-index: 99;
+}
+
+#close {
+    position: absolute;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    background: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 25px;
+    text-align: center;
+    z-index: 999;
+    right: 25px;
+}
+input[type="file"] {border:0;background:transparent;padding:0;}
+p.instrucciones {
+    font-size: 13px;
+    font-weight: 300;
+}
+p.texto1 {
+    font-weight: 300;
+    font-size: 22px;
+}
+p.texto2 {
+    font-size: 16px;
+    font-weight: 300;
+}
+#subpopupfoto {
+    background: #F0F0F0;
+    width: 1200px;
+    max-width: 95%;
+    margin: 0px auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+	padding:35px;
+}
+
+.margintop25  {margin-top:40px;}
+.marginbottom25 {margin-bottom:40px;}
+.interrogante {
+    background: #dedede;
+    font-size: 16px;
+    border-radius: 65px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #959595;
+    font-weight: 300;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.pointer {cursor:pointer;}
+.textRight {text-align:right;}
+.textCenter {text-align:center;}
+.textLeft {text-align:left;}
+.btn-redondeado {
+    border-radius: 20px;
+    background: transparent;
+    padding: 5px;
+    border: 3px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+	color:black;
+}
+.font13 {font-size:13px;}
+.Estilo1 {
+    color: #FF0000;
+    font-size: 15px;
+}
+.cabecera {background:#95C11F;}
+.btn-redondeado:hover {color:black;}
+.fondoindex {
+	background: url(../img/img1.png) left center no-repeat;
+    background-size: cover;
+    height: 858px;
+}
+.page-presupuestador {
+	background:#95C11F
+}
+input.form.form-control {
+    border-radius: 0;
+}
+.colorwhite {color:white;}
+ul.cuadrados > li {
+    display: inline-block;
+    vertical-align: middle;
+    background: #FFFFFF;
+    width: 200px;
+    text-align: center;
+    height: 200px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+	position:relative;
+	margin-bottom:20px;
+}
+.width100 { width:100%;}
+ul.cuadrados_planificador > li {
+    display: inline-block;
+    vertical-align: middle;
+    background: #95C11F;
+    width: 150px;
+    text-align: center;
+    height: 150px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 15px;
+	position:relative;
+	margin-bottom:20px;
+}
+ul.cuadrados_presupuesto > li {
+    display: inline-block;
+    vertical-align: middle;
+    background: white;
+    width: 165px;
+    text-align: center;
+    height: 165px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.col-condiciones {
+	
+	
+	font-size: 12px;
+    color: gray;
+    font-weight: 300;
+}
+form#form_presupuestador_cita * input[type="text"] {
+    margin-bottom: 10px;
+	height:50px;
+	border:0px;
+}
+.respuesta {
+    margin-left: 20px;
+    font-size: 14px;
+    background: #d6d6d6;
+    position: relative;
+    z-index: 9;
+    padding: 25px;
+    display: inline-block;
+}
+.respuesta:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -31px;
+    top: 14px;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #d6d6d6;
+    border-left: 20px solid transparent;
+    border-top: 20px solid transparent;
+}
+ul.cuadrados_servicios > li {
+    display: inline-block;
+    vertical-align: middle;
+    background: #F0F0F0;
+    width: 268px;
+    text-align: center;
+    height: 268px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 20px;
+	position:relative;
+	margin-bottom:20px;
+}
+
+ul.cuadrados_estilo > li {
+    display: inline-block;
+    vertical-align: middle;
+    background: white;
+    width: 100%;
+    text-align: center;
+    height: 70px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+ul.listado_imagenes > li {
+    display: inline-block;
+    text-align: center;
+    font-size: 13px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+ul.listado_imagenes {
+    list-style: none;
+    padding: 0;
+}
+.paddingtop0 {padding-top:0px}
+.paddingbottom0 {padding-bottom:0 !important;}
+ul.cuadrados,ul.cuadrados_servicios,ul.cuadrados_planificador,ul.cuadrados_presupuesto,ul.cuadrados_estilo {
+    list-style: none;
+    padding: 0;
+}
+.texto-li.centrado {width:80%;}
+textarea.form.form-control {
+	border-radius:0;
+	height:250px;}
+
+input.btn.btn-success {
+    background: #95C11F;
+    border-color: #95C11F;
+    width: 330px;
+    max-width: 100%;
+    padding: 25px;
+	    border-radius: 0;
+}
+.footer {
+    margin-top: 50px;
+    min-height: 100px;
+    background: #DBDBDB;
+}
+.centrado {
+	
+	 position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+	
+}
+.white {background:white;}
+.gris {background:#F0F0F0;}
+.menu-area-privada {
+	position: relative;
+    top: -21px;
+}
+.padding50 {padding:50px;}
+.col-md-3 > .gris {
+    margin-bottom: 20px;
+}
+.bgfinanciacion {
+	background: url(../img/financiacion.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: auto;
+}
+div.numerico {
+    font-size: 112px;
+    font-weight: 700;
+    display: inline-block;
+}
+div.txt {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    display: inline-block;
+}
+.destacado {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 20px;
+    font-weight: 300;
+}
+.green {background:#95C11F;}
+.textoIntro {
+	
+	padding:50px;padding-left:200px;
+	
+} 
+body.como-funciona-page * .row {
+    margin-bottom: 50px;
+}
+.titular-destacado {    
+	position: absolute;
+    bottom: 50px;
+    right: 100px;
+
+}
+.page-presupuestador {background:#95C11F;}
+.textococina {
+    display: inline-block;
+    width: 50%;
+    padding: 25px;
+    position: absolute;
+    top: -30px;
+}
+.imgcocina {
+    display: inline-block;
+}
+.min500 {min-height:500px;}
+
+
+.nav-presupuestador {
+	    padding-right: 2rem;
+	font-size:14px;
+	font-weight:bold;
+}
+.barra_progreso.activo {
+    background: #A8BD46;
+}
+.barra_progreso.completado {
+	
+	background:#849A26;
+	
+}
+.width80 {width:80%;}
+.height100vh {height:100vh;}
+.frase { 
+    position: absolute;
+    top: 50px;
+    font-size: 16px;}
+.presupuestador {
+    background: url(../iconos/icono_editar.png) center right no-repeat #95C11F;
+    padding: 15px;
+    color: white;
+    width: 300px;
+    max-width: 100%;
+	cursor:pointer;
+    font-weight: bold;
+}
+.barra_progreso {
+    width: 100%;
+    background: white;
+    height: 15px;
+}
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.container {
+    max-width: 1420px !important;
+}
+
+body {
+    padding-top: 0;
+	font-family: 'Montserrat', sans-serif !important;
+	    font-size: 18px;
+}
+.nav-link {
+    color: black;
+    display: block;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h1.my-4 {
+    font-weight: bold;
+    font-size: 56px;
+	word-break: break-word;
+}
+.pading25 {padding:25px;}
+.reformaintegral {
+	
+	padding-bottom: 0px;
+    position: relative;
+    top: 56px;
+    z-index: 9;
+    left: -35px;
+	
+}
+a.nav-link:hover {
+    color: #95C11F;
+}
+@media (max-width:1349px)
+{
+	.textoIntro {
+		padding-left:15px;
+		padding:15px;
+	}
+}
+
+@media (max-width:1149px)
+{
+	
+	.titular-destacado {   
+     right: auto;
+   }
+	
+}
+
+@media (max-width:949px)
+{
+	
+	.titular-destacado {
+    right: auto;
+    position: unset;
+    bottom: auto;
+    padding-top: 50px;
+}
+	
+}
+
+@media (max-width:767px)
+{
+	p > img[src="img/contacto.png"] {
+    margin-top: 25px;
+}
+  .min500 {
+    min-height: auto;
+    margin-bottom: 50px;
+  }
+	
+}
