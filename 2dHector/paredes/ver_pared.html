@@ -1,0 +1,29 @@
+<script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+<script>
+$(document).ready(function() 
+{
+  url_string = window.location.href;	
+  url = new URL(url_string);
+  paredes_creadas = parseInt(url.searchParams.get("creadas"));
+  paredes_totales = url.searchParams.get("totales");
+	
+  //Pinto el dibujo
+  pared_pintar=paredes_creadas+1;
+  document.write(localStorage.getItem('pared'+pared_pintar));
+	
+ // document.getElementById("mensaje_creada").style.display="none";
+  document.getElementById("myModalLabel").innerHTML="VIENDO PARED "+(paredes_creadas+1);
+  document.getElementById("contenido-modal").innerHTML="Para editar la pared "+(paredes_creadas+1)+" haz click <a href='https://rehubik.com/presupuestador/2d/paredes/?creadas="+paredes_creadas+"&totales="+paredes_totales+"'>AQU&Iacute;</a>";
+  
+	
+  $("div#panel > ul").css("display","none");
+  $("body > h2:first-child").css("display","none");
+  $("#boxinfo").css("display","none");	
+
+  ruta="https://rehubik.com/presupuestador/2d/paredes/?creadas="+paredes_creadas+"&totales="+paredes_totales;
+  $('#panel').append('<button class="btn btn-default fully object" style="cursor:pointer;" onclick="window.history.back();">VOLVER ATR&Aacute;S</button> <button class="btn btn-default fully object"  style="cursor:pointer;" onclick="window.location.assign(\''+ruta+'\')">EDITAR PARED</button>'); 
+  
+	
+});
+</script>

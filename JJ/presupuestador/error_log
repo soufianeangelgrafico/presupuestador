@@ -1,0 +1,30 @@
+[05-May-2020 12:38:14 UTC] PHP Warning:  include(menu.php): failed to open stream: No such file or directory in /home/angelgra/public_html/rehubic/index.php on line 25
+[05-May-2020 12:38:14 UTC] PHP Warning:  include(): Failed opening 'menu.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/angelgra/public_html/rehubic/index.php on line 25
+[19-May-2020 13:47:24 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/presupuestador.php on line 57
+[19-May-2020 13:47:24 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/presupuestador.php on line 58
+[19-May-2020 13:47:24 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/presupuestador.php on line 59
+[19-May-2020 13:47:24 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/presupuestador.php on line 60
+[19-May-2020 13:49:57 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/presupuestador.php on line 57
+[19-May-2020 13:49:57 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/presupuestador.php on line 58
+[19-May-2020 13:49:57 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/presupuestador.php on line 59
+[19-May-2020 13:49:57 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/presupuestador.php on line 60
+[19-May-2020 13:50:11 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/presupuestador.php on line 57
+[19-May-2020 13:50:11 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/presupuestador.php on line 58
+[19-May-2020 13:50:11 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/presupuestador.php on line 59
+[19-May-2020 13:50:11 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/presupuestador.php on line 60
+[19-May-2020 13:51:27 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/presupuestador.php on line 57
+[19-May-2020 13:51:27 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/presupuestador.php on line 58
+[19-May-2020 13:51:27 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/presupuestador.php on line 59
+[19-May-2020 13:51:27 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/presupuestador.php on line 60
+[19-May-2020 13:52:53 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/presupuestador.php on line 57
+[19-May-2020 13:52:53 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/presupuestador.php on line 58
+[19-May-2020 13:52:53 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/presupuestador.php on line 59
+[19-May-2020 13:52:53 UTC] PHP Notice:  Undefined index: file in /home/angelgra/public_html/rehubic/presupuestador.php on line 60
+[19-May-2020 13:52:53 UTC] PHP Notice:  Only variables should be passed by reference in /home/angelgra/public_html/rehubic/presupuestador.php on line 77
+[26-May-2020 12:03:04 UTC] PHP Notice:  Undefined index: email in /home/angelgra/public_html/rehubic/solicitar_cita_previa.php on line 5
+[26-May-2020 12:03:04 UTC] PHP Notice:  Undefined index: id_presupuesto in /home/angelgra/public_html/rehubic/solicitar_cita_previa.php on line 6
+[12-Jun-2020 09:21:08 UTC] PHP Notice:  Undefined index: paso in /home/angelgra/public_html/rehubic/presupuestador.php on line 671
+[12-Jun-2020 09:21:08 UTC] PHP Notice:  Undefined index: paso in /home/angelgra/public_html/rehubic/presupuestador.php on line 683
+[12-Jun-2020 09:21:08 UTC] PHP Notice:  Undefined index: paso in /home/angelgra/public_html/rehubic/presupuestador.php on line 695
+[12-Jun-2020 09:21:08 UTC] PHP Notice:  Undefined index: paso in /home/angelgra/public_html/rehubic/presupuestador.php on line 707
+[12-Jun-2020 09:21:08 UTC] PHP Notice:  Undefined index: paso in /home/angelgra/public_html/rehubic/presupuestador.php on line 719

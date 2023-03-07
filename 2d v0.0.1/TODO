@@ -1,0 +1,120 @@
+Email:
+    ¡Hola Ángel!
+
+    Espero que sigas muy bien!
+
+    Te comento por aquí algunas cuestiones que siguen dando problema de vez en cuando:
+
+    1. Hay usuarios registrados que no aparecen en el listado del Área de Cliente con lo cual no se les puede subir el fichero PDF de "presupuesto orientativo" y no es viable en ese caso que contraten por pasarela de pago. Esto me dijo Héctor sobre esto el 31/05, por si os resulta de ayuda: "He estado revisando esto que me comentas El script que hace el traslado de los nuevos usuarios de la tienda hacia rehubik (para poder acceder al área de clientes) si había "leido" el formulario pero no había llegado a actualizarle la tienda, entonces, al no tener tienda asignada, no hacia el traslado Le he asignado la tienda y ahora el traslado si se ha hecho correctamente, por lo que ya te debería aparecer en el área de clientes. Aunque no he visto ningún error en la programación, me apunto revisar esto para ver si ha sido algo puntual o hay algo incorrecto y si tu detectas algún otro caso, avísame también por favor."
+
+    Por ejemplo, esto ha pasado hoy con una clienta de Cocina DE GIRONA, lidia.noe.pereira@gmail.com.
+
+    2. Esta clienta tampoco se había volcado al exportar el formulario al Excel y hemos tenido que hacerlo manualmente... Por si tiene relación una cosa con la otra, porque hay veces que determinados usuarios no se exportan al Excel.
+
+    3. A veces hay citas habilitadas en el Área Interna que, sin embargo, cuando el cliente accede a reservar no las ve disponibles en el Calendario. Te paso pantallazos WhatsApp de lo que nos dice una clienta.
+
+    4. Importante: dijimos que las reservas de medición o tele medición se hagan al menos con 48h de antelación para darnos tiempo a organizarlas con el verificador/a. Esto está OK menos los viernes, ya que no está teniendo en cuenta que los findes no estamos en la ofi, de manera que quien vaya a reservar un viernes debe ver como citas disponibles más próximas las del martes.
+
+    ¿Podéis echarle un ojo?
+
+    ¡Un saludo!
+Hoy:
+    ✘ Usuarios registrados que no aparecen en el listado del Área de Cliente @started(22-11-15 09:38) @cancelled(22-11-15 13:29) @wasted(3h51m33s)
+        //sfar: Los que aparecen en el listado del Área de Cliente son los clientes que tienen un presupuesto hecho, en cambio, los usuarios no aparecen.
+        se puede cambiar en `intrant-page.php` cambindo;
+            //zra9 $result_id_presupuesto = $wpdb->get_results("SELECT email_cliente,id_presupuesto FROM presupuestos WHERE id_fichero=" . $res_recibidos->id_fichero);
+    ✘ Las reservas de medición o tele medición se hacen al menos con 48h @started(22-11-15 09:38) @cancelled(22-11-16 13:49) @wasted(1d4h11m26s)
+
+.
+                    @today 
+//zra9: Revisión del PRESUPUESTADOR - Control cambios
+
+☐//5dar 1. Plano: @started(22-11-16 14:07)
+
+    ☐ //no 1.1. No es posible introducir medidas manualmente	//k7al: Que el tabique pueda crearse arrastrando el cursor o bien introduciendo un valor a mano
+    ☐ //--> 1.2. No es posible introducir longitudes < 0,33m	//k7al: Reducir el radio del vértice o bien introduciendo el valor a mano (ver 1) `20cm`
+    ✔ 1.3. No es posible introducir carpinterías <0,80m	//k7al: A aportar `70cm` @done(21-11-22 08:22)
+    ✔ 1.4. La escala de puertas/ventanas no es correcta; medida correcta, pero visualmente no	//k7al: A aportar @done(21-11-22 08:22)
+    ✔ 1.5. Módulos mal escalados (se ha detectado en el de *fregadero de 0,60m*, en la *despensa de 0,40m* y en los *módulos altos*)	//k7al: Escalar todos los pictogramas @started(22-11-17 08:32) @done(22-11-17 10:04) @lasted(1h32m58s)
+    ✔ 1.6. No existen/faltan los módulos altos de 0,60x0,40 y de 0,80x40m	//k7al: Crearlos @started(22-11-16 14:39) @done(22-11-16 17:38) @lasted(2h59m26s)
+    ✔ 1.7. Pictograma INTERRUPTOR no tiene el tamaño del del ENCHUFE	//k7al: Hacer el INTERRUPTOR del mismo tamaño que el ENCHUFE @started(22-11-17 08:00) @done(22-11-17 08:31) @lasted(31m28s)
+    ☐ //7mar 1.8. El cuadro eléctrico se ve muy pequeño	//k7al: Ampliar el cuadro eléctrico ligeramente
+    ✔ //--> 1.9. Los pictogramas de ventanas/puertas no son los que envió Irene en forma y color	//k7al: Que sean los que mandó Irene (reenviados durante la reunión del 08/11 a Ángel por email). @started(22-11-17 10:29) @done(22-11-28 10:22) @lasted(1w3d23h53m4s)
+    ✔ 1.10. Si queremos mover un elemento (ej. enchufe) situado cerca de un vértice, el sistema prioriza el vértice y no deja coger el enchufe	//k7al: Que el vértice sea más pequeño o que el plano quede bloqueado o en una capa inferior. @done(22-11-23 12:53)
+    ✔ //no 1.11. Las OBSERVACIONES del plano y las OBSERVACIONES para el cliente se llaman igual	//k7al: Que las OBSERVACIONES DEL PLANO pasen a llamarse "ANOTACIONES EN EL PLANO" y que las OBSERVACIONES PARA EL CLIENTE pasen a llamarse "OBSERVACIONES DE TU PROYECTO". @done(22-11-23 08:02)
+    ✔ //no 1.12. Al meter ANOTACIONES DEL PLANO salta una ventana emergente cada vez con info	//k7al: Sacar esta ventana emergente solo si se pincha info. @done(21-11-22 08:23)
+    ✔ //no 1.13. El tamaño de fuente de las observaciones del plano es muy grande.	//k7al: Que el tamaño de fuente máximo sea el mínimo de ahora y que no se elijan con una barra sino con PEQUEÑO, MEDIANO, GRANDE @done(22-11-28 09:44)
+    ✔ 1.14. Cuando eliminas una observación del plano se elimina del plano pero se queda en el listado.	//k7al: Que se elimine de ambos sitios. @done(22-11-23 12:53)
+    ✔ 1.15. No aparecen líneas en las cotas parciales y además se solapan en las esquinas	//k7al: Que aparexcan líneas en las cotas parciales sin solaparse @done(22-11-23 12:53)
+    ✔ 1.16. Multitud de formatos de cotas	//k7al: Unificar tamaño y fuente de todas las cotas @started(22-11-17 08:31) @done(22-11-17 08:31) @lasted(56s)
+    ✔ //no 1.17. Las cotas totales de un tabique con carpintería en él no se muestran .	//k7al: Visualizar la cota total de ese tabique aunque tenga una ventana/puerta incrustado @done(22-11-23 12:57)
+    ✔ //--> 1.18. Problemas de edición/movimiento y eliminar/añadir tabiques	//k7al: Que el plano sea intuitivo y fácilmente editable, trasladando los cambios en un tabique al resto o pudiendo eliminar/añadir un tabique seleccionado sin bloquear el proceso @done(22-11-29 08:39)
+    ✔ 1.19. No funciona a veces "Seleccionar muro"	//k7al: En principio, solo pasa cuando se raya el programa... Verificarlo @done(22-11-29 08:40)
+    ☐ //no 1.20. Hay que rehacer todo el plano para el estado reformado desde 0	//k7al: Que se aproveche el plano estado actual para hacer el estado reformado
+    ✘ 1.21. Si 20 no fuera posible, cuando pasamos a estado reformado... @cancelled(22-11-29 08:40)
+    ✔ //no 1.22. La ventana plano ESTADO ACTUAL es muy grande y hace que los tabiques largos "choquen" contra ella	//k7al: Hacer ventana ESTADO ACTUAL más pequeña y reducir el título, que ocupa mucho, así como permitir minimizar la ventana ESTADO ACTUAL @done(22-11-23 13:47)
+    ☐ //no 1.23. El verificador siempre tiene que empezar el proceso como CLENTE	//k7al: Que el VERIFICADOR pueda empezar el proceso en versión verificador
+//5dar 2. Trabajos presupuestados:
+    ☐ 2.1. Fallan partidas que tienen que ver con perímetro/superficie (tabiques) como el alicatado, solado, pintura. De hecho, salen con precio 0€.	//k7al: Que se calculen correctamente (antes sí funcionaba esto)
+    ☐ 2.2. Los materiales (cerámica paredes y suelo) salen con precio unitario como precio total, es decir, no tiene en cuenta la superficie	//k7al: Que se multiplique precio unitario de cerámica por superficie y por 1,15 (mermas)
+    ☐ 2.3. No incluye en el presupuesto cantoneras, rejuntes...	//k7al: Que aparezcan y sumen
+    ☐ 2.4. El precio del radiador no tiene en cuenta el nº de elementos indicado, siempre te repercute solo 1 elemento	//k7al: Incluiremos en el presupuestador los precios totales de radiador según nº de elementos
+    ☐ 2.5. En la vista infografía aparece por detrás el plano	//k7al: Que no aparezca, ya que "ensucia" la vista de la infografía
+    ☐ @low 2.6. Actualmente solo llega al cliente, cuando acaba el proceso, un email con el PDF adjunto e ID del presu.	//k7al: Al finalizar el presupuesto versión cliente y rellenar el formulario, el email que llegue al cliente tenga el cuerpo del mensaje como ahora, con el acceso a su Área de Cliente, y que allí vea el presupuesto y pueda reservar medición.
+//5dar 3. Dossier:
+    ☐ 3.1. La infografía que se muestra es la de base, no muestra los acabados elegidos.	//k7al: Que se muestren los acabados elegidos
+    ☐ 3.2. En el texto de la primera página aparece Rehubikm2	//k7al: Cambiarlo por Rehubik
+    ☐ @low 3.3. En la memoria de calidades aparece el mobiliario de IKEA	//k7al: Que no aparezca, aunque sea 0€ el precio, ya que confunde al cliente
+    ☐ 3.4. En la memoria aparecen materiales/calidades que no aportamos nosotros	//k7al: Solo mostrar en la memoria de calidades los materiales que aportamos nosotros.
+    ☐ 3.5. El plano reformado no aparece, solo el estado actual	//k7al: Que aparezcan los dos planos, actual y reformado, y en tamaño fácilmente legible/visible
+    ☐ 3.6. Hemos detectado en diferentes pruebas que no salen en el dossier las Observaciones de tu proyecto	//k7al: Revisarlo. Que salgan siempre.
+//5dar 4. Versión verificador:
+    ☐ @low 4.1. Ahora te condiciona la unidad del artículo simple la unidad asignada al artículo compuesto del que formaba parte	//k7al: Poder seleccionar (¿con barrita?) las unidades de TODOS los ARTÍCULOS SIMPLES.
+    ☐ @low 4.2. No está añadida la base de datos al Buscador de SCs	//k7al: Vincularlo
+    ☐ @low 4.3. Hay que cambiar el cuadro de SCs	//k7al: Nuevo cuadro de SCs
+    ☐ @low 4.4. No es un problema	//k7al: Ir almacenando los SCs que se van creando en un Excel que pueda ser revisado posteriormente por un Responsable de Rehubik a fin de validarlo internamente y pasarlo a Baseges
+//5dar 5. Presupuesto final desglosado:
+    ☐ 5.1. Se suman todos los trabajos de todos los presupuestos relacionados con ese proyecto, sin distinguir pres1, 2, 3...	//k7al: Que se visualicen y sumen solo las partidas y precios de la versión de presupuesto que estamos trabajando
+    ☐ 5.2. Hay partidas fantasma en el presupuesto detallado, como enlucido de partes afectadas por derribo de tabiquería	//k7al: Que aparezcan en el desglose.
+    ☐ 5.3. Al finalizar el proceso se sigue mostrando el Formulario de registro/envío	//k7al: Cambiarlo por un botón que diga FINALIZAR Y ENVIAR
+    ☐ 5.4. Al cliente no le llega la opción directa con botón de CONTRATAR	//k7al: Que como opción cliente acabe en CONTRATAR
+//5dar 6. Versión responsive:
+    ☐ 6.1. Versión vertical 1920 x 1080 ppp	//k7al: Rediseño de menú para que se adapte a pantalla de IKEA
+    ☐ 6.2. Versión Tablet //k7al: Rediseño de menú para visualizar en tablet por parte de los verificadores
+
+Archive:
+
+Horas:
+    Noviembre: @est(18 day and 0 minutes)
+        Semana 1:
+            ✔ 1/11/2022 @started(22-11-1 08:00) @done(22-11-1 14:30) @lasted(6h0m0s)
+            ✔ 2/11/2022 @started(22-11-2 08:00) @done(22-11-2 14:30) @lasted(9h0m0s)
+            ✔ 3/11/2022 @started(22-11-3 08:00) @done(22-11-3 14:30) @lasted(6h0m0s)
+            ✔ 4/11/2022 @started(22-11-4 08:00) @done(22-11-4 14:30) @lasted(6h0m0s)
+        Semane 2:
+            ✔ 7/11/2022 @started(22-11-7 08:00) @done(22-11-7 14:40) @lasted(6h40m0s) @echo(diseño versión vertical)
+            ✔ 7/11/2022 @started(22-11-7 15:10) @done(22-11-7 18:00) @lasted(2h50m30s) @echo(diseño versión vertical)
+            ✔ 8/11/2022 @started(22-11-8 08:00) @done(22-11-8 14:30) @lasted(6h30m0s)
+            ✔ 9/11/2022 @started(22-11-9 08:00) @done(22-11-9 14:40) @lasted(6h40m0s)
+            ✔ 9/11/2022 @started(22-11-9 15:10) @done(22-11-9 17:40) @lasted(2h30m0s)
+            ✔ 10/11/2022 @started(22-11-10 08:00) @done(22-11-10 14:40) @lasted(6h40m0s)
+            ✔ 11/11/2022 @started(22-11-11 07:30) @done(22-11-11 15:00) @lasted(7h30m0s)
+        Semana 3:
+            ✔ 14/11/2022 @started(22-11-14 08:00) @done(22-11-14 17:30) @lasted(9h0m0s)
+            ✔ 15/11/2022 @started(22-11-15 08:00) @done(22-11-15 14:30) @lasted(6h30m0s)
+            ✔ 16/11/2022 @started(22-11-16 08:00) @done(22-11-16 14:40) @lasted(6h40m0s)
+            ✔ 16/11/2022 @started(22-11-16 15:20) @done(22-11-16 18:10) @lasted(2h50m0s)
+            ✔ 17/11/2022 @started(22-11-17 08:00) @done(22-11-17 14:30) @lasted(6h30m0s)
+            ✔ 18/11/2022 @started(22-11-18 08:24) @done(22-11-18 15:34) @lasted(7h10m38s)
+        Semana 4:
+            ✔ 21/11/2022 @started(22-11-21 08:25) @done(21-11-21 18:21) @lasted(9h56m45s)
+            ✔ 22/11/2022 @started(22-11-22 08:13) @done(22-11-22 14:52) @lasted(6h39m58s)
+            ✔ 23/11/2022 @started(22-11-23 07:26) @done(22-11-23 17:36) @lasted(10d10m51s)
+            ✘ 24/11/2022 @baja(COVID 19) @cancelled(22-11-24)
+            ✘ 25/11/2022 @baja(COVID 19) @cancelled(22-11-25)
+        Semana 5:
+            28/11/2022:
+                ✔ Mañana @started(22-11-28 08:08) @est(6h12m31s) @echo() @done(22-11-28 14:20) @lasted(6h12m31s)
+                ✔ Tarde @started(22-11-28 15:35) @est(2h51m7s) @done(22-11-28 18:26) @lasted(2h51m7s)
+            ✔ 29/11/2022 @started(22-11-29 08:35) @est(6h30m) @done(22-11-29 13:41) @lasted(5h6m17s)
+            ☐ 01/11/2022 @started(22-12-01 08:09) @est(6h30m)

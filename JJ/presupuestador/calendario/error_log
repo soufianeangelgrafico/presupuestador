@@ -1,0 +1,12 @@
+[19-May-2020 09:18:29 UTC] PHP Notice:  Undefined index: fecha in /home/angelgra/public_html/rehubic/calendario/reservar_cita.php on line 4
+[19-May-2020 09:19:17 UTC] PHP Notice:  Undefined index: fecha in /home/angelgra/public_html/rehubic/calendario/reservar_cita.php on line 4
+[19-May-2020 09:19:22 UTC] PHP Notice:  Undefined index: fecha in /home/angelgra/public_html/rehubic/calendario/reservar_cita.php on line 4
+[19-May-2020 09:20:47 UTC] PHP Notice:  Trying to get property of non-object in /home/angelgra/public_html/rehubic/calendario/reservar_cita.php on line 16
+[26-May-2020 09:51:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_object() on boolean in /home/angelgra/public_html/rehubic/calendario/reservar_cita.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/angelgra/public_html/rehubic/calendario/reservar_cita.php on line 60
+[26-May-2020 09:51:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_object() on boolean in /home/angelgra/public_html/rehubic/calendario/reservar_cita.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/angelgra/public_html/rehubic/calendario/reservar_cita.php on line 60
