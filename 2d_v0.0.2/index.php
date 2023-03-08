@@ -177,10 +177,10 @@ if (isset($_GET["id_presupuesto"]))
 			&#13;&#10;ESTADO Actual:&#13;&#10;
 			<?php
 			if (!isset($_GET["id_presupuesto"])) {
-				echo $observaciones_estado_actual;
+				//echo $observaciones_estado_actual;
 			?>
 
-				&#13;&#10;ESTADO REFORMADO:&#13;&#10;
+			&#13;&#10;ESTADO REFORMADO:&#13;&#10;
 			<?php
 			} else if (isset($_SESSION["login"]) && isset($_GET["id_presupuesto"])) {
 				echo $observaciones;
@@ -668,7 +668,7 @@ if (isset($_GET["id_presupuesto"]))
 							<!-- <span id="sizePolice"></span> -->
 							<button class="btn greenBtn fully " id="puertas" onclick="$('.sub').hide();$('#door_list').toggle(200);$('#window_list').hide();">Puertas</button>
 							<div id="door_list" class="owl-carousel owl-theme owl-loaded owl-drag" style="display:none;background:#fff;padding:10px;">
-								<!-- 7mar: tart codigo puertas -->
+								<!-- 7mar: start codigo puertas -->
 								<?php
 								$dir_path_puertas = "./assets/puertas";
 								$extensions_array = array('jpg', 'png', 'jpeg');
@@ -2098,26 +2098,34 @@ if (isset($_GET["id_presupuesto"]))
 						<div class="greenBtn" onclick="hideStep2SubMenus(this);">Profundidad 60cm</div>
 						<div class="child_list">
 							<ul class="owl-carousel owl-theme" style="display: block;">
-								<li><img src="modulos_bajos/60cm/lavadora.png" class="modulo btn fully object" id="lavadora_bajo"></li>
-								<li><img src="modulos_bajos/60cm/secadora.png" class="modulo btn fully object" id="secadora_bajo"></li>
-								<li><img src="modulos_bajos/60cm/lavavajillas.png" class="modulo btn fully object" id="lavavajillas_bajo"></li>
-								<li><img src="modulos_bajos/60cm/lavavajillas-45.png" class="modulo btn fully object" id="lavavajillas_45"></li>
-								<li><img src="modulos_bajos/60cm/placa-electrica-80.png" class="modulo btn fully object" id="placa-electrica80"></li>
-								<li><img src="modulos_bajos/60cm/placa-electrica-60.png" class="modulo btn fully object" id="placa-electrica60"></li>
-								<li><img src="modulos_bajos/60cm/placa-electrica-horno-60.png" class="modulo btn fully object" id="placa-electrica-horno60"></li>
-								<li><img src="modulos_bajos/60cm/placa-electrica-40.png" class="modulo btn fully object" id="placa-electrica40"></li>
-								<li><img src="modulos_bajos/60cm/placa-gas-80.png" class="modulo btn fully object" id="placa-gas80"></li>
-								<li><img src="modulos_bajos/60cm/placa-gas-60.png" class="modulo btn fully object" id="placa-gas60"></li>
-								<li><img src="modulos_bajos/60cm/placa-gas-horno-60.png" class="modulo btn fully object" id="placa-gas-horno"></li>
-								<li><img src="modulos_bajos/60cm/placa-gas-40.png" class="modulo btn fully object" id="placa-gas40"></li>
-								<li><img src="modulos_bajos/60cm/fregadero-80.png" class="modulo btn fully object" id="fregadero80"></li>
-								<li><img src="modulos_bajos/60cm/fregadero-60.png" class="modulo btn fully object" id="fregadero60"></li>
-								<li><img src="modulos_bajos/60cm/fregadero-40.png" class="modulo btn fully object" id="fregadero40"></li>
-								<li><img src="modulos_bajos/60cm/mueble-bajo-80.png" class="modulo btn fully object" id="mueble-bajo80"></li>
-								<li><img src="modulos_bajos/60cm/mueble-bajo-60.png" class="modulo btn fully object" id="mueble-bajo60"></li>
-								<li><img src="modulos_bajos/60cm/mueble-bajo-40.png" class="modulo btn fully object" id="mueble-bajo40"></li>
-								<li><img src="modulos_bajos/60cm/mueble-bajo-30.png" class="modulo btn fully object" id="mueble-bajo30"></li>
-								<li><img src="modulos_bajos/60cm/mueble-bajo-20.png" class="modulo btn fully object" id="mueble-bajo20"></li>
+								<?php
+									$imagenes_modulos_bajos = array(
+										array("src" => "modulos_bajos/60cm/lavadora.png", "id" => "lavadora_bajo"),
+										array("src" => "modulos_bajos/60cm/secadora.png", "id" => "secadora_bajo"),
+										array("src" => "modulos_bajos/60cm/lavavajillas.png", "id" => "lavavajillas_bajo"),
+										array("src" => "modulos_bajos/60cm/lavavajillas-45.png", "id" => "lavavajillas_45"),
+										array("src" => "modulos_bajos/60cm/placa-electrica-80.png", "id" => "placa-electrica80"),
+										array("src" => "modulos_bajos/60cm/placa-electrica-60.png", "id" => "placa-electrica60"),
+										array("src" => "modulos_bajos/60cm/placa-electrica-horno-60.png", "id" => "placa-electrica-horno60"),
+										array("src" => "modulos_bajos/60cm/placa-electrica-40.png", "id" => "placa-electrica40"),
+										array("src" => "modulos_bajos/60cm/placa-gas-80.png", "id" => "placa-gas80"),
+										array("src" => "modulos_bajos/60cm/placa-gas-60.png", "id" => "placa-gas60"),
+										array("src" => "modulos_bajos/60cm/placa-gas-horno-60.png", "id" => "placa-gas-horno"),
+										array("src" => "modulos_bajos/60cm/placa-gas-40.png", "id" => "placa-gas40"),
+										array("src" => "modulos_bajos/60cm/fregadero-80.png", "id" => "fregadero80"),
+										array("src" => "modulos_bajos/60cm/fregadero-60.png", "id" => "fregadero60"),
+										array("src" => "modulos_bajos/60cm/fregadero-40.png", "id" => "fregadero40"),
+										array("src" => "modulos_bajos/60cm/mueble-bajo-80.png", "id" => "mueble-bajo80"),
+										array("src" => "modulos_bajos/60cm/mueble-bajo-60.png", "id" => "mueble-bajo60"),
+										array("src" => "modulos_bajos/60cm/mueble-bajo-40.png", "id" => "mueble-bajo40"),
+										array("src" => "modulos_bajos/60cm/mueble-bajo-30.png", "id" => "mueble-bajo30"),
+										array("src" => "modulos_bajos/60cm/mueble-bajo-20.png", "id" => "mueble-bajo20")
+									);
+								
+									for ($i = 0; $i < count($imagenes_modulos_bajos); $i++) {
+										echo "<li><img src='" . $imagenes_modulos_bajos[$i]["src"] . "' class='modulo btn fully object' id='" . $imagenes_modulos_bajos[$i]["id"] . "'></li>";
+									}
+								?>
 							</ul>
 						</div>
 						<div class="greenBtn" onclick="hideStep2SubMenus(this);">Profundidad reducida 40cm</div>
