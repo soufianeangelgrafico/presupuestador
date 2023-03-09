@@ -5,7 +5,8 @@ Dompdf\Autoloader::register();
 
 use Dompdf\Dompdf;
 
-require($_SERVER['DOCUMENT_ROOT'] . '/wp-load.php');
+//require($_SERVER['DOCUMENT_ROOT'] . '/wp-load.php');
+require('/var/www/vhosts/rehubik.com/httpdocs/wp-load.php');
 include("../conexion.php");
 
 use PHPMailer\PHPMailer\PHPMailer;
