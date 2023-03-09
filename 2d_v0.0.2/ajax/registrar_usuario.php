@@ -1,6 +1,6 @@
 <?php
-require_once '../../../dompdf-master/lib/html5lib/Parser.php';
-require_once '../../../dompdf-master/src/Autoloader.php';
+require_once '../../../../dompdf-master/lib/html5lib/Parser.php';
+require_once '../../../../dompdf-master/src/Autoloader.php';
 Dompdf\Autoloader::register();
 
 use Dompdf\Dompdf;
