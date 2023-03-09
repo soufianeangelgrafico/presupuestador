@@ -150,7 +150,7 @@ if (isset($_GET["id_presupuesto"])) {
 
 
 			<div id="menu_planificador_movil">
-				<!-- onclick="window.open(' https://rehubik.com/presupuestador/2d_v0.0.2/ver_plano_estado_actual.php?sesion=< ?php echo $_COOKIE['random'];?>','Estado actual','menubar=1,resizable=1,width=380,height=400')" -->
+				<!-- onclick="window.open(' https://presupuestador.rehubik.com/2d_v0.0.2/ver_plano_estado_actual.php?sesion=< ?php echo $_COOKIE['random'];?>','Estado actual','menubar=1,resizable=1,width=380,height=400')" -->
 				<div class="paso_menu_movil">PASO 1: DIBUJA EL ESTADO ACTUAL</div>
 				<div class="paso_menu_movil menu-activo" id="menu_plano_movil">PASO 2: ESTADO REFORMADO</div>
 				<div class="paso_menu_movil" id="menu_mobiliario_movil">PASO 3: MOBILIARIO</div>
@@ -5519,7 +5519,7 @@ if (!isset($_SESSION["login"])) {
 							observaciones_texto: observaciones_texto
 						},
 						success: function(respuesta) {
-							window.location.assign(" https://rehubik.com/presupuestador/2d_v0.0.2/registro_cliente.php");
+							window.location.assign(" https://presupuestador.rehubik.com/2d_v0.0.2/registro_cliente.php");
 						}
 
 					});
@@ -5607,7 +5607,7 @@ if (!isset($_SESSION["login"])) {
 
 
 
-					//window.location.assign(" https://rehubik.com/presupuestador/2d_v0.0.2/registro_cliente.php"); 
+					//window.location.assign(" https://presupuestador.rehubik.com/2d_v0.0.2/registro_cliente.php"); 
 				}
 
 			} else {

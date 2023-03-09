@@ -155,7 +155,7 @@ if ($result->num_rows || $result_material->num_rows) {
 $codigoHTML .= '<tr style="color:white;background:rgb(149, 193, 31);text-align:right"><td colspan="4" style="font-size:12px;font-weight:bold;padding:5px;border:0;border-top:1px solid black">PRECIO FINAL: ' . $suma_precio . '€</td></tr>';
 
 $codigoHTML .= '</table>';
-$codigoHTML .= '<p>Puedes acceder a tu plano desde <a href=" https://rehubik.com/presupuestador/2d_v0.0.2/?id_presupuesto=' . $id_presupuesto . '" target="_blank" rel="noopener">AQUÍ</p>';
+$codigoHTML .= '<p>Puedes acceder a tu plano desde <a href=" https://presupuestador.rehubik.com/2d_v0.0.2/?id_presupuesto=' . $id_presupuesto . '" target="_blank" rel="noopener">AQUÍ</p>';
 
 $codigoHTML .= '</body></html>';
 //echo $codigoHTML; 

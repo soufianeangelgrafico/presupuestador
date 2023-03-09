@@ -9,7 +9,7 @@ if (!isset($_COOKIE["idplano"]) && !isset($_GET["id_presupuesto"])) {
 ?>
 	<script>
 		// alert("No hemos detectado el estado actual de tu cocina. Por favor, vuelve al paso anterior");
-		// window.location.assign(" https://rehubik.com/presupuestador/2d_v0.0.2/previa.php");
+		// window.location.assign(" https://presupuestador.rehubik.com/2d_v0.0.2/previa.php");
 		// document.write("<p>Test 0</p>") 
 	</script>
 <?php
@@ -241,7 +241,7 @@ if (isset($_GET["id_presupuesto"]))
 			</div>
 
 			<div id="menu_planificador_movil">
-				<!-- onclick="window.open(' https://rehubik.com/presupuestador/2d_v0.0.2/ver_plano_estado_actual.php?sesion=< ?php echo $_COOKIE['random'];?>','Estado actual','menubar=1,resizable=1,width=380,height=400')" -->
+				<!-- onclick="window.open(' https://presupuestador.rehubik.com/2d_v0.0.2/ver_plano_estado_actual.php?sesion=< ?php echo $_COOKIE['random'];?>','Estado actual','menubar=1,resizable=1,width=380,height=400')" -->
 				<!-- sfar: paso 1 -->
 				<div class="paso_menu_movil divmenu" id="menu_estado_actual_movil">
 					<!-- disactiv -->
@@ -4848,7 +4848,7 @@ if (!isset($_SESSION["login"])) {
 							observaciones_texto: observaciones_texto
 						},
 						success: function(respuesta) {
-							window.location.assign(" https://rehubik.com/presupuestador/2d_v0.0.2/registro_cliente.php");
+							window.location.assign(" https://presupuestador.rehubik.com/2d_v0.0.2/registro_cliente.php");
 						}
 					});
 				}

@@ -520,7 +520,7 @@ $codigoHTML .= "<div class='page_break'></div>";
 ///  ║ //zra9 ***************************** PÁGINA 9 ******************************** ///     ║
 ///  ╚════════════════════════════════════════════════════════════════════════════════════════╝
 
-$codigoHTML .= '<img src="https://rehubik.com/presupuestador/2d_v0.0.2/contraportada.png" style="width:1000px">';
+$codigoHTML .= '<img src="https://presupuestador.rehubik.com/2d_v0.0.2/contraportada.png" style="width:1000px">';
 $codigoHTML .= '</body></html>';
 
 $dompdf = new Dompdf(array('enable_remote' => true));

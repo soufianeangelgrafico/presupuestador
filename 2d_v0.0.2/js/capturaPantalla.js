@@ -105,7 +105,7 @@ $("#screenshot_paso_1").click(function () {
                         },
                         success: function (respuesta) {
                             // window.location.assign(
-                            //     " https://rehubik.com/presupuestador/2d_v0.0.2/index.php"
+                            //     " https://presupuestador.rehubik.com/2d_v0.0.2/index.php"
                             // );
 
                             show();

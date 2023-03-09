@@ -23,7 +23,7 @@
 
 		while ($arr_result = $result->fetch_array()) { ?>
 			<p>
-				<a href="https://rehubik.com/presupuestador/2d_v0.0.2/?id_presupuesto=<?php echo $arr_result["id"]; ?>" target="_blank">
+				<a href="https://presupuestador.rehubik.com/2d_v0.0.2/?id_presupuesto=<?php echo $arr_result["id"]; ?>" target="_blank">
 					PRESUPUESTO #<?php echo $arr_result["id"]; ?>
 					<?php
 					if (!is_null($arr_result["id_modificado"])) { ?>
@@ -33,7 +33,7 @@
 			</p>
 			<p>
 				<a target="_blank" href="https://rehubik.com/generar_pdf.php?id=<?php echo $arr_result["id"]; ?>">VER PDF</a> |
-				<a href="https://rehubik.com/presupuestador/2d_v0.0.2/?id_presupuesto=<?php echo $arr_result["id"]; ?>" target="_blank">VER PRESUPUESTO</a> |
+				<a href="https://presupuestador.rehubik.com/2d_v0.0.2/?id_presupuesto=<?php echo $arr_result["id"]; ?>" target="_blank">VER PRESUPUESTO</a> |
 				<a href="https://rehubik.com/exportar_xlsx.php?id_presupuesto=<?php echo $arr_result["id"]; ?>">EXPORTAR UDO</a> |
 				<a href="https://rehubik.com/exportar_materiales_xlsx.php?id_presupuesto=<?php echo $arr_result["id"]; ?>">EXPORTAR MATERIALES</a>
 			</p>

@@ -1340,7 +1340,7 @@ if (isset($_GET["id_presupuesto"])) {
                   altura_techo: altura_techo
                 },
                 success: function(respuesta) {
-                  window.location.assign(" https://rehubik.com/presupuestador/2d_v0.0.2/index.php");
+                  window.location.assign(" https://presupuestador.rehubik.com/2d_v0.0.2/index.php");
                   console.log("Guardado");
                 }
               });
@@ -1408,7 +1408,7 @@ if (isset($_GET["id_presupuesto"])) {
 
 
 
-          //window.location.assign(" https://rehubik.com/presupuestador/2d_v0.0.2/registro_cliente.php"); 
+          //window.location.assign(" https://presupuestador.rehubik.com/2d_v0.0.2/registro_cliente.php"); 
         }
 
       } else {
